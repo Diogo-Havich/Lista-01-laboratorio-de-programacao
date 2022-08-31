@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main (){
+  float conta,percentual,total;
+  printf("digite o valor da conta\n");
+  scanf("%f",&conta);
+  percentual = conta/10;
+  total = conta + percentual;
+  printf("conta = %f\n10%% = %f\ntotal = %f\n",conta,percentual,total);
+  return 0;}
