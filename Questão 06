@@ -1,16 +1,23 @@
 #include <stdio.h>
-int main (){
-  float altura, peso;
-  char sexo;
-  printf("digite seu sexo\n");
-  scanf("%c",&sexo);
-  printf("digite sua altura em metros\n");
-  scanf("%f",&altura);
-  if(sexo == 'F'){
-    peso = 62.1 * altura - 44.7;
-    printf("peso ideal = %.2f\n",peso);}
-   else if(sexo == 'M'){
-     peso = 72.7 * altura - 58;
-     printf("peso ideal = %.2f\n",peso);}
-  else{printf("sexo invalido\n");}
-  return 0;}
+int main(){
+	float altura,peso;
+	char sexo;
+	printf ("digite sua altura e seu sexo\n");
+	scanf ("%f", &altura);
+ 	getchar();
+	sexo = getchar();
+	switch(sexo){
+		case 'M':
+		case 'm':
+			peso = 72.7* altura -58;
+			printf ("peso ideal = %f\n",peso);
+			break;
+		case 'F':
+		case 'f':
+			peso = 62.1* altura -44.7;
+			printf ("peso ideal = %f\n",peso);
+			break;
+		default:
+			printf ("sexo inválido\n");
+			break;}
+return 0;}
