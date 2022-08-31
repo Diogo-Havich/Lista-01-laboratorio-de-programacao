@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main (){
+  int x,triplo,quadruplo;
+  float meio;
+  printf("digite o valor\n");
+  scanf("%d",&x);
+  triplo = x*3;
+  quadruplo = x*4;
+  meio = (float)x/2;
+  printf("valor: %d\ntriplo: %d\nquadruplo: %d\nmeio: %f",x,triplo,quadruplo,meio);
+  return 0;}
