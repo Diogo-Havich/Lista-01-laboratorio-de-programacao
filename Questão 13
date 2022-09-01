@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+	int a,b,aux;
+	printf("Digite dois valores\n");
+	scanf("%d%d", &a, &b);
+  aux = a;
+  a = b;
+  b = aux;
+	printf("%d %d\n", a, b);
+return 0;}
