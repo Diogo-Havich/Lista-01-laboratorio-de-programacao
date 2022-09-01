@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+  float C,F;
+  printf("digite a temperatura\n");
+  scanf("%f",&C);
+  F = (9 * C + 160) / 5;
+  printf("temperatura = %.2f F\n",F);
+return 0;}
