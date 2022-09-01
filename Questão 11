@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+	float reais,dolar,cotacao;
+	printf("Quantos está a cotação do dolar?\n");
+	scanf("%f",&cotacao);
+	printf("Quantos reais voce deseja converter?\n");
+	scanf("%f",&reais);
+	printf("%.2f em reais corresponde a %.2f dolares\n",reais,dolar = reais / cotacao);
+return 0;}
