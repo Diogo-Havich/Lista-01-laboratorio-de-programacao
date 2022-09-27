@@ -1,7 +1,8 @@
 #include <stdio.h>
-	int main(){
-	int x;
-	printf("digite o valor de x\n");
-	scanf("%d",&x);
-	printf("Hexadecimal: %X\noctal: %o",x,x);
+
+int main(){
+	int num;
+	puts("Digite o valor");
+	scanf("%d", &num);
+	printf("Hexadecimal: %X\noctal: %o", num, num);
 return 0;}
