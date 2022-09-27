@@ -1,18 +1,7 @@
 #include <stdio.h>
 int main (){
-  int valor, receba;
-  printf("digite o valor\n");
-  scanf("%d",&valor);
-  receba = valor;
-  while(receba == 0){
-  printf("Valor modulo = %d\n",receba);
-  receba = 'a';}
-  while(receba < 0){
-  printf("Valor modulo = %d\n",receba * -1);
-  receba = 0;}
-  while(valor > 0){
-  printf("Valor modulo = %d\n",receba);
-  receba = 0;
-  valor = 0;}
-
+  int num;
+  puts("Digite o valor");
+  scanf("%d", &num);
+  printf("%d\n", num = num > 0 ? num : num * -1);
 return 0;}
