@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+#define pi 3.14159
+
+int main (){
+	float raio;
+	scanf("%f", &raio);
+	printf("raio = %f\ndiametro = %f\ncircunferencia = %f\narea = %f\n", raio, raio * 2, 2 * pi * raio, pi * (raio * raio));
+return 0;}
