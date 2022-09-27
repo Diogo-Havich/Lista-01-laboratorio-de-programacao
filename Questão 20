@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+  int num;
+  puts("Digite o valor");
+  scanf("%d", &num);
+  num = num % 2 ? printf("ímpar\n") : printf("par\n");
+ return 0;}
