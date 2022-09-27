@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+  int num;
+  puts("Digite o valor");
+  scanf("%d", &num);
+  printf("O numero digitado foi %d\nInvertido = ", num);
+  while(num >= 1){
+    printf("%d", num % 10);
+    num = num / 10;
+    }
+  puts("");
+return 0;}
