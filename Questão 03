@@ -1,7 +1,10 @@
 #include <stdio.h>
-int main(){
+
+int main()
+  {
   float valor;
   printf("digite um valor\n");
   scanf("%f",&valor);
   printf("%.1f",valor);
-return 0;}  
+  return 0;
+  }  
