@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+  {
+  int i = 0;
+  float x, n, pot = 1;
+  puts("Digite o valor de x");
+  scanf("%f", &x);
+  puts("Digite o valor de n");
+  scanf("%f", &n);
+  while(i < n)
+    {
+    pot = pot  * 2;
+     i++;
+     }
+   printf("%.2f", x * pot);
+   return 0;
+  }
