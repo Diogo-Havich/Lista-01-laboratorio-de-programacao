@@ -1,1 +1,30 @@
+#include <stdio.h>
 
+float COMPRIMENTO, VOLUME, ALTURA, LARGURA;
+
+void receber();
+void CalcularVolume();
+
+int main()
+  {
+  receber();
+  CalcularVolume();
+  return 0;
+  }
+  
+ void receber()
+  {
+  puts("Digite o valor do comprimento");
+  scanf("%f", &COMPRIMENTO);
+  puts("Digite o valor da largura");
+  scanf(" %f", &LARGURA);
+  puts("Digite o valor da altura");
+  scanf(" %f", &ALTURA);
+  }
+  
+ void CalcularVolume()
+  {
+  VOLUME = COMPRIMENTO * LARGURA * ALTURA;
+  printf("O volume é %.2f\n", VOLUME);
+  }
+  
