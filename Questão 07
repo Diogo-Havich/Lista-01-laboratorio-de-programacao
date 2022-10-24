@@ -1,9 +1,14 @@
 #include <stdio.h>
-int main(){
-  int seg,min,hor;
-  printf("digite os valores da hora, minutos e segundos\n");
-  scanf("%d%d%d",&hor,&min,&seg);
-  seg = seg + (min *60) + (hor *60 *60);
-  printf("%d\n",seg);
+
+int main()
+  {
+  int seg, min, hor;
+  puts("digite os valores da hora");
+  scanf("%d", &hor);
+   puts("digite os valores da hora");
+  scanf("%d", &min);
+   puts("digite os valores da hora");
+  scanf("%d", &seg);
+  printf("%d\n", seg + (min * 60) + (hor * 60 * 60));
   return 0;
   }
