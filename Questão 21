@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-int main(){
+int main()
+  {
   int num1, num2;
   puts("Digite os valores");
   scanf("%d %d", &num1, &num2);
   num1 % num2 ? printf("%d não é  múltiplo de %d\n", num1, num2) : printf("%d é  múltiplo de %d\n", num1, num2);
-return 0;}
+  return 0;
+  }
