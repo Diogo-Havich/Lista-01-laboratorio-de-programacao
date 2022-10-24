@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+float valor, dias, bruto, liquido, horas, percentual;
+ 
+void Receber();
+void Calcular();
+
+int main ()
+  {
+  Receber();
+  Calcular();
+  return 0;
+  }
+  
+void Receber()
+  {
+  puts("Digite o valor da hora trabalhada");
+  scanf ("%f", &valor);
+  puts("Digite as horas trabalhadas por dia");
+  scanf(" %f", &horas);
+  puts("Digite os dias trabalhados no mes");
+  scanf(" %f", &dias);
+  puts("Digite o percentual do INSS");
+  scanf (" %f", &percentual);
+  }
+  
+ void Calcular()
+  {
+  bruto = valor * dias * horas;
+  percentual = percentual / 100;  
+  liquido = (bruto * (-percentual)) + bruto;
+  printf("Valor bruto = %.2f Valor líquido = %.2f\n", bruto, liquido);
+  }
