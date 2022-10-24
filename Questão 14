@@ -5,7 +5,6 @@ int main()
   float C, F;
   puts("digite a temperatura");
   scanf("%f", &C);
-  F = (9 * C + 160) / 5;
-  printf("temperatura = %.2f F\n", F);
+  printf("temperatura = %.2f°C = %.2f F\n", C, (9 * C + 160) / 5);
   return 0;
   }
