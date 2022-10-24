@@ -1,7 +1,10 @@
 #include <stdio.h>
-int main(){
-	float num1,num2;
-	printf("Digite dois valores\n");
-	scanf("%f%f",&num1,&num2);
+
+int main()
+	{
+	float num1, num2;
+	puts("Digite dois valores");
+	scanf("%f%f", &num1, &num2);
 	printf("soma = %.2f\tproduto = %.2f\tsubtração = %.2f\tquociente = %.2f\tresto = %d\n", num1 + num2, num1 * num2, num1 - num2, num1 / num2, (int)num1 % (int)num2);
-return 0;}
+	return 0;
+	}
