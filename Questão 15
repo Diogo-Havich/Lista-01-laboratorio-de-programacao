@@ -1,20 +1,28 @@
 #include <stdio.h>
-int main (){
+
+#define valor 50.25
+
+int main ()
+  {
   int dias;
-  float valor = 50.25, bruto, liquido;
-  printf ("Digite os dias trabalhados\n");
+  float bruto, liquido;
+  puts("Digite os dias trabalhados");
   scanf ("%d", &dias);
-  if (dias <= 10 ){
+  if (dias <= 10 )
+    {
     bruto = valor * dias;
     liquido = ((valor * dias) * (-0.1) + bruto);
     }
-   else if (dias > 10 && dias <= 20){
+   else if (dias > 10 && dias <= 20)
+    {
     bruto = valor * dias * 1.2;
     liquido = ((valor * dias * 1.2) * (-0.1) + bruto);
-     }
-   else{
+    }
+   else
+    {
     bruto = valor * dias * 1.3;
     liquido = ((valor * dias * 1.3) * (-0.1) + bruto);
-     }
-  printf("Valor líquido = %.2f\n",liquido);
-return 0;}
+    }
+  printf("Valor líquido = %.2f\n", liquido);
+  return 0;
+  }
