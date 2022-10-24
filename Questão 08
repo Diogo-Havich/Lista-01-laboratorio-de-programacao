@@ -1,7 +1,10 @@
 #include <stdio.h>
-int main(){
+
+int main()
+	{
 	int valor;
-	printf("digite o valor\n");
-	scanf("%d",&valor);
-	printf("valor = %d\nquadrado = %d\n",valor,valor = valor * valor);
-return 0;}
+	puts("digite o valor");
+	scanf("%d", &valor);
+	printf("valor = %d\nquadrado = %d\n", valor, valor * valor );
+	return 0;
+	}
