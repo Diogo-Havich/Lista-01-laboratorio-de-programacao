@@ -1,7 +1,10 @@
 #include <stdio.h>
-int main(){
+
+int main()
+  {
   int valor;
-  printf("digite o valor\n");
-  scanf("%d",&valor);
-  printf("valor recebido = %d\nAntecessor = %d\nSucessor = %d\n",valor,valor - 1,valor + 1);
-  return 0;}
+  puts("digite o valor");
+  scanf("%d", &valor);
+  printf("valor recebido = %d\nAntecessor = %d\nSucessor = %d\n", valor, valor - 1, valor + 1);
+  return 0;
+  }
