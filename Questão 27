@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+#define qtd 3
+
+int main()
+  {
+  float num1, num2, num3, med, pot, valor = 1;
+  puts("Digite os valores");
+  scanf("%f%f%f", &num1, &num2, &num3);
+  printf("\nMédia aritimética = %.2f\n", (num1 + num2 + num3) / qtd);
+  pot = num1 * num2 * num3;
+  valor = valor / qtd;
+  med = pow((pot), (valor));
+  printf("\nMédia geométrica = %.2f\n", med);
+  return 0;
+  }
