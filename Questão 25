@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void Receber();
+void Calcular();
+
+int seg = 0, horas = 0, minutos = 0;
+
+int main()
+  {
+  Receber();
+  Calcular();
+  return 0;
+  }
+
+void Receber()
+  {
+  puts("Digite os segundos");
+  scanf("%d", &seg);
+  }
+
+void Calcular()
+  {
+  printf("\n%d segundos correspondem a ", seg);
+  while(seg >= 3600)
+    {
+      horas++;
+      seg = seg - 3600;
+    }
+    while(seg >= 60)
+    {
+      minutos++;
+      seg = seg - 60;
+    }
+  printf("%d horas, %d minutos e %d segundos\n", horas, minutos, seg);
+  }
